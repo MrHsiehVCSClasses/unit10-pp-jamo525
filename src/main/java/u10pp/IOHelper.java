@@ -116,6 +116,7 @@ public class IOHelper {
             fileScanner.close();
         } catch (FileNotFoundException error) {
             System.out.println(fileName + " not found");
+          System.out.println(System.getProperty("user.dir"));
         }
 
         return fileData;
